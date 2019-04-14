@@ -4,13 +4,13 @@
 
 import 'package:flutter/material.dart';
 
-class ExpansionTilePage extends StatelessWidget {
+class ExpansionTileWechat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Flutter官方组件展示'),
+          title: const Text('Flutter展示'),
         ),
         body: ListView.builder(
           itemBuilder: (BuildContext context, int index) =>
@@ -230,7 +230,7 @@ final List<Entry> data = <Entry>[
           Entry('存储'),
           Entry('云调用'),
         ],
-      )
+      ),
     ],
   ),
 ];
@@ -258,7 +258,7 @@ class EntryItem extends StatelessWidget {
 }
 
 void main() {
-  runApp(ExpansionTilePage());
+  runApp(new ExpansionTileWechat());
 }
 
 /*
